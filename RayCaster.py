@@ -231,7 +231,7 @@ def gameWin():
     TextRect.center = ((1000/2),(500/2))
     screen.blit(TextSurf, TextRect)
 
-    button('Quit',450,400,100,50,(227, 176, 252),(227, 176, 252),'Salir')
+    button('Salir',450,400,100,50,(227, 176, 252),(227, 176, 252),'quit')
 
     pygame.display.update()
 
@@ -246,16 +246,16 @@ def gameIntro():
 
     screen.fill((251, 214, 250))
     largeText = pygame.font.Font('freesansbold.ttf', 90)
-    TextSurf, TextRect = text_objects('PULPITO', largeText)
+    TextSurf, TextRect = text_objects('PULPITOS', largeText)
     TextRect.center = ((1000/2),(100))
     screen.blit(TextSurf, TextRect)
 
     largeText = pygame.font.Font('freesansbold.ttf', 30)
-    TextSurf, TextRect = text_objects('Encuentra el diamante', largeText)
+    TextSurf, TextRect = text_objects('Encuentra el tesoro escondido. Si lo encuentras ganas el juego.', largeText)
     TextRect.center = ((1000/2),(250))
     screen.blit(TextSurf, TextRect)
 
-    button('Comenzar',450,400,100,50,(227, 176, 252),(227, 176, 252),'play')
+    button('Comenzar',450,400,150,50,(227, 176, 252),(227, 176, 252),'play')
 
     pygame.display.update()
 
