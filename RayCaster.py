@@ -225,13 +225,13 @@ def gameWin():
         pygame.quit()
         quit()
 
-    screen.fill((249,253,250))
+    screen.fill((251, 214, 250))
     largeText = pygame.font.Font('freesansbold.ttf', 115)
-    TextSurf, TextRect = text_objects('Victoria! ♥', largeText)
+    TextSurf, TextRect = text_objects('Victoria!', largeText)
     TextRect.center = ((1000/2),(500/2))
     screen.blit(TextSurf, TextRect)
 
-    button('Quit',450,400,100,50,(227, 176, 252),(227, 176, 252),'quit')
+    button('Quit',450,400,100,50,(227, 176, 252),(227, 176, 252),'Salir')
 
     pygame.display.update()
 
